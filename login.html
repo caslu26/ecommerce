@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="login-form" class="form">
+            <h2>Login</h2>
+            <label for="username">Nome de usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Entrar</button>
+            <p class="message">Ainda não tem uma conta? <a href="#">Cadastre-se</a></p>
+        </form>
+        <form id="signup-form" class="form hidden">
+            <h2>Cadastro</h2>
+            <label for="new-username">Novo nome de usuário:</label>
+            <input type="text" id="new-username" name="new-username" required>
+            <label for="new-password">Nova senha:</label>
+            <input type="password" id="new-password" name="new-password" required>
+            <button type="button" onclick="validateSignup()">Cadastrar</button>
+            <p class="message">Já tem uma conta? <a href="#">Faça login</a></p>
+        </form>
+    </div>
+    <script src="functions.js"></script>
+
+
+</body>
+</html>
