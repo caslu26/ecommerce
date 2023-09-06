@@ -45,4 +45,11 @@
         console.log("Dados a serem enviados para o servidor:");
         console.log("Nome de usuário: " + username);
         console.log("Senha: " + password);
+    
     }
+
+// função do navbar
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav");
+
+hamburger.addEventListener("click", () => nav.classList.toggle("active"));
